@@ -1,0 +1,31 @@
+##square of the n numbers
+
+n=int(input())
+for i in range(n):
+    print(i*i)
+
+##print the n numbers
+
+if __name__ == '__main__':
+    n = int(input())
+    for i in range(1,n+1):
+        print(i,end=" ")
+
+### check whether given year is leap year or not
+
+def is_leap(year):
+    leap = False
+    if year%4==0:
+        if year%100==0:
+            if year%400==0:
+                leap=True
+            else:
+                leap=False
+        else:
+            leap=True
+    else:
+        leap=False
+    return leap
+
+year = int(input())
+print(is_leap(year))
